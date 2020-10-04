@@ -1,5 +1,6 @@
 # App-Loader
 
+A customizable loader for Angular apps, it can intercept any request and display loader automatically.
 
 [![github](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com/ahmedbhl/app-loader)
 [![angular](https://badgen.net/badge/Angular/v%2010/red)](https://github.com/angular/angular-cli)
@@ -37,12 +38,13 @@ Install `app-loader` via NPM, using the command below.
 (soon will be published on npm repository)
 
 ```shell
-$ npm install --save app-loader
+$ npm install --save app-auto-loading
 
 # Or Yarn
 
-$ yarn add app-loader
+$ yarn add app-auto-loading
 ```
+link to th repo : https://www.npmjs.com/package/app-auto-loading
 ### Automatic
 
 you need to import the `LoaderModule` and the `LoaderInterceptor` if you need activate display the loader automaticly for each request http.
@@ -77,8 +79,8 @@ All what you need just to import the service `LoaderService` in the constructor 
 })
 export class DemoComponent {
     constructor(private readonly loaderService: LoaderService) { 
-        this.loaderService.isLoading.next(true) // For display the loader
-        this.loaderService.isLoading.next(false) // For hide the loader
+        this.loaderService.isLoading.next(true) // Display
+        this.loaderService.isLoading.next(false) // Hide
     }
 
 ```

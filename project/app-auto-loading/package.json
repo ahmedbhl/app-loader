@@ -1,0 +1,37 @@
+{
+  "name": "app-auto-loading",
+  "version": "1.0.0",
+  "description": "A customizable loader for Angular apps, it can intercept any request and display loader automatically",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedbhl/app-loader.git"
+  },
+  "keywords": [
+    "loader",
+    "loader-three-dots",
+    "three bounce loading",
+    "spinner",
+    "app-loader",
+    "progress",
+    "node",
+    "nmp",
+    "angular",
+    "progressbar",
+    "progress bar",
+    "Angular loader",
+    "Angular loading",
+    "Angular multiple loaders",
+    "Angular spinner",
+    "Angular progress bar"
+  ],
+  "author": "Ahmed bouhlel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahmedbhl/app-loader/issues"
+  },
+  "homepage": "https://github.com/ahmedbhl/app-loader#readme"
+}
