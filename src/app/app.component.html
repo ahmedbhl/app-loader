@@ -1,4 +1,27 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<app-loader></app-loader>
+
+<main>
+  <h3>
+    The loader launches automatically for each call of an API
+  </h3>
+  <button type="button" (click)="refreshData()">Call API</button>
+</main>
+
+<div class="group">
+  <div class="property-card" *ngFor="let user of (users$ | async )">
+    <a href="#">
+      <div class="property-image">
+        <div class="property-image-title">
+        </div>
+      </div>
+    </a>
+    <div class="property-description">
+      <h5> {{ user.name }} </h5>
+      <p>{{ user.website }}.</p>
+    </div>
+    <a href="#">
+      <div class="property-social-icons">
+      </div>
+    </a>
+  </div>
+</div>
